@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <a href="#home" id="siteName">Loading…</a>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#links">Links</a>
+    </nav>
+
+  </header>
+
+  <main class="wrap">
+    <section class="intro" id="home">
+      <h1 id="headline"></h1>
+      <p class="sub" id="tagline"></p>
+      <div class="meta" id="meta"></div>
+    </section>
+
+    <section id="about">
+      <div class="row">
+        <h2 id="aboutTitle">About</h2>
+      </div>
+      <div class="prose" id="aboutBody"></div>
+    </section>
+
+    <section id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+      </div>
+      <div class="cards" id="projectGrid"></div>
+    </section>
+
+    <section id="skills">
+      <div class="row">
+        <h2>Skills</h2>
+      </div>
+      <ul class="list" id="skillsList"></ul>
+    </section>
+
+    <section id="links">
+      <div class="row">
+        <h2>Links</h2>
+      </div>
+      <div class="chips" id="linkChips"></div>
+    </section>
+
+    <footer class="foot">
+      <span id="footText"></span>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
