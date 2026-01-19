@@ -9,7 +9,7 @@ const animationKeyframes = [
   { transform: "translateY(0)" },
 ]
 
-const dataFolderPrefix = "./data/"
+const dataFolderPrefix = "https://api.alex-software.dev/data/"
 const siteJsonPath = `${dataFolderPrefix}site.json`
 const linksJsonPath = `${dataFolderPrefix}links.json`
 const aboutJsonPath = `${dataFolderPrefix}about.json`
