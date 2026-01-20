@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <title>404</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>404 · Not Found</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .box{
+      max-width: 560px;
+      padding: 28px;
+      border-radius: var(--radiusCard);
+      border: 1px solid var(--colorLine);
+      background: rgba(15,21,28,.92);
+      box-shadow: var(--shadowCard);
+      text-align: center;
+    }
+
+    .code{
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--colorMango);
+      margin: 0 0 6px;
+    }
+
+    .title{
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .desc{
+      margin: 0 0 18px;
+      color: var(--colorMuted);
+    }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .actions a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 12px;
+      border-radius: var(--radiusPill);
+      border: 1px solid var(--colorTealLine);
+      background: rgba(2,123,123,.05);
+      color: var(--colorText);
+      text-decoration:none;
+      font-size: 13px;
+    }
+
+    .actions a:hover{
+      color: var(--colorMango);
+      border-color: rgba(255,196,34,.55);
+      background: rgba(255,196,34,.06);
+    }
+
+    .dot{
+      width:6px;
+      height:6px;
+      border-radius: var(--radiusDot);
+      background: var(--colorMango);
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hey you somehow got a 404 error</h1>
-    <h4>Could you maybe like not</h4>
-    <h4>Thanks</h4>
-    <a href="https://alex-software.dev/">Go back to main site?</a>
+  <div class="box">
+    <div class="code">404</div>
+    <h1 class="title">Yeah… this page doesn't exist</h1>
+    <p class="desc">
+      Either the link is broken, mistyped, or you wandered somewhere you weren't meant to.
+    </p>
+
+    <div class="actions">
+      <a href="https://alex-software.dev/">
+        <span class="dot"></span>
+        Back to the main site
+      </a>
+    </div>
+  </div>
 </body>
 </html>
