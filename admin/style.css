@@ -179,3 +179,38 @@ a:hover{
   select{ min-width: 180px; width: 100%; }
   .status{ margin-left: 0; width: 100%; }
 }
+
+.toolbar a{
+  display:inline-flex;
+  align-items:center;
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--colorTealLine);
+  background: rgba(2,123,123,.05);
+}
+
+.toolbar a:hover{
+  color: var(--colorMango);
+  border-color: rgba(255,196,34,.55);
+  background: rgba(255,196,34,.06);
+}
+
+select{
+  background: var(--colorPanel);
+  color: var(--colorText);
+  border: 1px solid var(--colorTealLine);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+  font-family: inherit;
+}
+
+select option{
+  background: var(--colorPanel);
+  color: var(--colorText);
+}
+
+select option:checked,
+select option:hover{
+  background: rgba(2,123,123,.25);
+  color: var(--colorText);
+}

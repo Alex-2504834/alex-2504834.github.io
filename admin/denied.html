@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>403 · Access denied</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top">
+    <div class="brand">
+      <span class="dot"></span>
+      Admin
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="panel">
+      <div class="toolbar">
+        <strong>403</strong>
+        <span class="status err">Access denied</span>
+      </div>
+
+      <div style="padding:16px;">
+        <p>
+          You’re authenticated, but you don’t have permission to access this admin area.
+        </p>
+
+        <p class="hint">
+          If you think this is a mistake, make sure you’re logged in with the correct Google
+          account, or ask Alex to add your email to the Access allow-list.
+        </p>
+
+        <div class="toolbar" style="border:0; padding-left:0;">
+          <a href="https://alex-software.dev/">Back to main site</a>
+          <a href="/cdn-cgi/access/logout">Log out</a>
+          <button onclick="history.back()">Go back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
